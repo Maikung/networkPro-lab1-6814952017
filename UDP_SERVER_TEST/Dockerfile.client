@@ -1,0 +1,7 @@
+# Dockerfile.client
+FROM python:3.8-slim
+
+WORKDIR /app
+COPY udp_client.py /app
+
+CMD ["python", "udp_client.py"]

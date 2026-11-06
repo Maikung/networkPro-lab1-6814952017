@@ -1,0 +1,7 @@
+# Dockerfile.server
+FROM python:3.8-slim
+
+WORKDIR /app
+COPY echo_server.py /app
+
+CMD ["python", "echo_server.py"]
